@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "guests",
+  "info": {
+    "name": "guest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "required": true,
+      "type": "string"
+    },
+    "rsvp": {
+      "type": "boolean"
+    },
+    "diet": {
+      "enum": [
+        "None",
+        "Vegetarian",
+        "Vegan",
+        "Other"
+      ],
+      "type": "enumeration"
+    },
+    "diet_other": {
+      "type": "string"
+    },
+    "allergies": {
+      "type": "string"
+    },
+    "invitation": {
+      "model": "invitation",
+      "via": "guests"
+    }
+  }
+}

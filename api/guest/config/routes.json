@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "PUT",
+      "path": "/guests/",
+      "handler": "Guest.updateByInviteCode",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

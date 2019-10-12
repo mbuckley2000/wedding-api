@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "wedding_api",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "postgres",
+        "password": "postgres"
+      },
+      "options": {}
+    }
+  }
+}

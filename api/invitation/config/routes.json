@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "PUT",
+      "path": "/invitations/",
+      "handler": "Invitation.updateByInviteCode",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/invitations/",
+      "handler": "Invitation.retrieveGuestsByInviteCode",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

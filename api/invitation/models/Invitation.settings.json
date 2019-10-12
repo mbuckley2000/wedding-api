@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "invitations",
+  "info": {
+    "name": "invitation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "invite_code": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "guests": {
+      "collection": "guest",
+      "via": "invitation"
+    },
+    "seen": {
+      "type": "boolean"
+    }
+  }
+}
